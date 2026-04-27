@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brawl Links | Perfil Oficial</title>
+
+    <!-- FONTES ATUALIZADAS -->
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Montserrat:wght@800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <style>
+        :root {
+            --bs-yellow: #FFCB05;
+            --bs-blue: #000000;
+            --bs-purple: #8D32FF;
+            --bs-orange: #FF8A00;
+            --bs-dark: #1A1A1A;
+            --bs-white: #FFFFFF;
+            --bs-shadow: 0px 6px 0px rgba(0, 0, 0, 0.3);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif; /* ALTERADO */
+        }
+ 
+         body {
+            background: radial-gradient(circle, var(--bs-blue) 0%, #003da1 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            color: var(--bs-white);
+        }
+
+       
+        .container {
+            width: 100%;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        .profile-header {
+            margin-bottom: 30px;
+        }
+
+        .profile-img {
+            width: 110px;
+            height: 110px;
+            border-radius: 50%;
+            border: 5px solid var(--bs-yellow);
+            box-shadow: var(--bs-shadow);
+            margin-bottom: 15px;
+            object-fit: cover;
+        }
+
+        /* TÍTULO COM NOVA FONTE */
+        h1 {
+            font-family: 'Bangers', cursive;
+            font-size: 28px;
+            letter-spacing: 2px;
+            text-shadow: 3px 3px 0px #000000;
+            -webkit-text-stroke: 1px #000;
+            line-height: 1.2;
+        }
+
+        .links-wrapper {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        /* BOTÕES COM NOVA FONTE */
+        .btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 18px 25px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 20px;
+            color: var(--bs-white);
+            text-shadow: 2px 2px 0px rgba(0,0,0,0.5);
+            transition: all 0.2s ease;
+            position: relative;
+            border: 3px solid #000;
+            box-shadow: var(--bs-shadow);
+        }
+
+        .btn i {
+            margin-right: 12px;
+            font-size: 24px;
+        }
+
+        .btn:active {
+            transform: translateY(4px);
+            box-shadow: 0px 2px 0px rgba(0, 0, 0, 0.3);
+        }
+
+        .btn:hover {
+            transform: scale(1.05);
+        }
+
+      .btn-whatsapp {
+    background: linear-gradient(180deg, #25D366 0%, #128C7E 100%);
+    color: white;
+    text-shadow: none;
+    animation: glow 2s infinite;
+}
+
+        @keyframes glow {
+            0% { box-shadow: 0 0 5px var(--bs-yellow), var(--bs-shadow); }
+            50% { box-shadow: 0 0 20px var(--bs-yellow), var(--bs-shadow); }
+            100% { box-shadow: 0 0 5px var(--bs-yellow), var(--bs-shadow); }
+        }
+
+        .btn-instagram {
+            background: linear-gradient(180deg, #f09433 0%, #dc2743 100%);
+        }
+
+        .btn-tiktok {
+            background-color: var(--bs-dark);
+        }
+
+        .btn::after {
+            content: "";
+            position: absolute;
+            top: 5px;
+            left: 10%;
+            width: 80%;
+            height: 30%;
+            background: rgba(255, 255, 255, 0.2);
+            border-radius: 50px;
+            pointer-events: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header class="profile-header">
+            <img src="site/img/perfil.png" alt="Avatar Brawl" class="profile-img">
+            <h1>🏆 Só entra quem joga pra ganhar, Aqui habilidade vira dinheiro.</h1>
+        </header>
+
+        <main class="links-wrapper">
+            <a href="https://chat.whatsapp.com/JbHf3md7MNR79VQPVFxm6w" class="btn btn-whatsapp">
+                <i class="fab fa-whatsapp"></i>
+                GRUPO NO WHATSAPP
+            </a>
+
+            <a href="https://www.instagram.com/brawl_arena67?igsh=ZTR5YmZmZ3h4N2w2" class="btn btn-instagram">
+                <i class="fab fa-instagram"></i>
+                INSTAGRAM
+            </a>
+
+            <a href="https://www.tiktok.com/@brawl.arena85?_r=1&_t=ZS-95tfChHdK3I" class="btn btn-tiktok">
+                <i class="fab fa-tiktok"></i>
+                TIKTOK
+            </a>
+        </main>
+    </div>
+
+</body>
+</html>
