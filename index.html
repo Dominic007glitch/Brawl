@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>💸 Jogue e Ganhe no Brawl Arena</title>
+    <title>Brawl Links | Perfil Oficial</title>
 
     <!-- FONTES ATUALIZADAS -->
     <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Montserrat:wght@800&display=swap" rel="stylesheet">
@@ -17,7 +17,7 @@
             --bs-purple: #8D32FF;
             --bs-orange: #FF8A00;
             --bs-dark: #1A1A1A;
-            --bs-white: #FFFFFF;
+            --bs-white: #ffffff;
             --bs-shadow: 0px 6px 0px rgba(0, 0, 0, 0.3);
         }
 
@@ -28,17 +28,17 @@
             font-family: 'Montserrat', sans-serif; /* ALTERADO */
         }
  
-            body {
+        body {
     background: radial-gradient(circle at center, #000000 0%, #000000 70%);
-    
     
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 4%;
     color: var(--bs-white);
 }
+
 
        
         .container {
@@ -52,8 +52,8 @@
         }
 
         .profile-img {
-            width: 110px;
-            height: 110px;
+            width: 85px;
+            height: 85px;
             border-radius: 50%;
             border: 5px solid var(--bs-yellow);
             box-shadow: var(--bs-shadow);
@@ -109,52 +109,182 @@
             transform: scale(1.05);
         }
 
-      .btn-whatsapp {
-    background: linear-gradient(180deg, #25D366 0%, #128C7E 100%);
-    color: white;
-    text-shadow: none;
-    animation: glow 2s infinite;
+/* ===================== WHATSAPP ===================== */
+
+.btn-whatsapp {
+    background: linear-gradient(135deg, #25D366 0%, #1ebe5d 45%, #128C7E 100%);
+    color: #fff;
+    border: none;
+    box-shadow:
+        0 6px 18px rgba(37, 211, 102, .45),
+        0 0 15px rgba(37, 211, 102, .25);
+    animation: whatsappGlow 1.8s infinite;
+    transition: .3s ease;
 }
 
-        @keyframes glow {
-            0% { box-shadow: 0 0 5px var(--bs-yellow), var(--bs-shadow); }
-            50% { box-shadow: 0 0 20px var(--bs-yellow), var(--bs-shadow); }
-            100% { box-shadow: 0 0 5px var(--bs-yellow), var(--bs-shadow); }
-        }
+.btn-whatsapp:hover {
+    transform: translateY(-3px) scale(1.03);
+    filter: brightness(1.08);
+    box-shadow:
+        0 10px 28px rgba(37,211,102,.6),
+        0 0 28px rgba(37,211,102,.45);
+}
 
-        .btn-instagram {
-            background: linear-gradient(180deg, #f09433 0%, #dc2743 100%);
-        }
+@keyframes whatsappGlow {
+    0% {
+        box-shadow:
+            0 6px 18px rgba(37,211,102,.45),
+            0 0 8px rgba(37,211,102,.2);
+    }
 
-        .btn-tiktok {
-            background-color: var(--bs-dark);
-        }
+    50% {
+        box-shadow:
+            0 8px 24px rgba(37,211,102,.65),
+            0 0 24px rgba(37,211,102,.55);
+    }
 
-        .btn::after {
-            content: "";
-            position: absolute;
-            top: 5px;
-            left: 10%;
-            width: 80%;
-            height: 30%;
-            background: rgba(255, 255, 255, 0.2);
-            border-radius: 50px;
-            pointer-events: none;
-        }
-    </style>
+    100% {
+        box-shadow:
+            0 6px 18px rgba(37,211,102,.45),
+            0 0 8px rgba(37,211,102,.2);
+    }
+}
+
+
+/* ===================== INSTAGRAM ===================== */
+
+.btn-instagram {
+    background: linear-gradient(
+        135deg,
+        #833AB4 0%,
+        #C13584 35%,
+        #E1306C 55%,
+        #FD1D1D 75%,
+        #FCAF45 100%
+    );
+    color: #fff;
+    border: none;
+    transition: .3s ease;
+    box-shadow: 0 6px 18px rgba(193,53,132,.35);
+}
+
+.btn-instagram:hover {
+    transform: translateY(-3px);
+    filter: brightness(1.05);
+    box-shadow: 0 10px 25px rgba(193,53,132,.45);
+}
+
+
+/* ===================== TIKTOK ===================== */
+
+.btn-tiktok {
+    background: linear-gradient(135deg, #111111 0%, #1d1d1d 100%);
+    color: #fff;
+    border: 2px solid rgba(255,255,255,.06);
+    position: relative;
+    overflow: hidden;
+    transition: .3s ease;
+    box-shadow: 0 6px 18px rgba(0,0,0,.35);
+}
+
+.btn-tiktok::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        90deg,
+        rgba(37,244,238,.18),
+        transparent 35%,
+        transparent 65%,
+        rgba(254,44,85,.18)
+    );
+    pointer-events: none;
+}
+
+.btn-tiktok:hover {
+    transform: translateY(-3px);
+    box-shadow:
+        -4px 0 15px rgba(37,244,238,.35),
+        4px 0 15px rgba(254,44,85,.35),
+        0 10px 22px rgba(0,0,0,.4);
+}
+
+
+.subtitle{
+    margin-top:12px;
+    font-size:18px;
+    font-weight:700;
+    color:white;
+}
+
+.mini-info{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+    margin-top:18px;
+    color:#d6d6d6;
+    font-size:15px;
+    font-weight:600;
+}
+
+
+.cta{
+    margin-bottom:16px;
+    font-size:19px;
+    font-weight:800;
+    color:#FFCB05;
+    animation: pulse 1.6s infinite;
+}
+
+@keyframes pulse{
+
+0%{
+transform:scale(1);
+}
+
+50%{
+transform:scale(1.07);
+}
+
+100%{
+transform:scale(1);
+}
+
+}
+
+
+
+</style>
+
+
+
 </head>
 <body>
 
     <div class="container">
-        <header class="profile-header">
-            <img src="site/img/topo.jpeg" alt="Avatar Brawl" class="profile-img">
-            <h1>🏆 Só entra quem joga pra ganhar, Aqui habilidade vira dinheiro.</h1>
-        </header>
+     
+
+    <img src="img/topo.jpeg" alt="Avatar Brawl" class="profile-img">
+
+    <h1>BRAWL ARENA</h1>
+
+    <p class="subtitle">
+        💰 Transforme suas partidas em dinheiro.</p>
+    <div class="mini-info">
+        <span>⚡ Inscrições abertas</span>
+    
+        
+    </div>
+
+</header>
 
         <main class="links-wrapper">
+            <div class="cta">
+    👇 ENTRE POR AQUI 👇
+</div>
             <a href="https://chat.whatsapp.com/JbHf3md7MNR79VQPVFxm6w" class="btn btn-whatsapp">
                 <i class="fab fa-whatsapp"></i>
-                GRUPO NO WHATSAPP
+                PARTICIPAR DO CAMPEONATO
             </a>
 
             <a href="https://www.instagram.com/brawl_arena67?igsh=ZTR5YmZmZ3h4N2w2" class="btn btn-instagram">
